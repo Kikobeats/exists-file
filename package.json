@@ -5,15 +5,26 @@
   "version": "1.0.0",
   "main": "./index.js",
   "author": {
-    "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
   },
   "repository": "Kikobeats/exists-file",
   "bugs": {
     "url": "https://github.com/Kikobeats/exists-file/issues"
   },
-  "keywords": ["fs", "exist", "exists", "check", "file"],
+  "keywords": [
+    "check",
+    "exist",
+    "exists",
+    "file",
+    "fs"
+  ],
+  "devDependencies": {
+    "coffee-script": "*",
+    "mocha": "*",
+    "should": "*"
+  },
   "engines": {
     "node": ">= 0.10.0",
     "npm": ">= 1.4.0"
