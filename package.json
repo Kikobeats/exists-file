@@ -1,0 +1,25 @@
+{
+  "name": "exists-file",
+  "description": "Check if a file exists. A fs.exists implementation that is not deprecated.",
+  "homepage": "https://github.com/Kikobeats/exists-file",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "author": {
+    "name": "Kiko Beats",
+    "email": "josefrancisco.verdu@gmail.com",
+    "url": "https://github.com/Kikobeats"
+  },
+  "repository": "Kikobeats/exists-file",
+  "bugs": {
+    "url": "https://github.com/Kikobeats/exists-file/issues"
+  },
+  "keywords": ["fs", "exist", "exists", "check", "file"],
+  "engines": {
+    "node": ">= 0.10.0",
+    "npm": ">= 1.4.0"
+  },
+  "scripts": {
+    "test": "sh test/test.sh"
+  },
+  "license": "MIT"
+}
