@@ -30,6 +30,10 @@ var methods = {
 };
 
 module.exports = function(filepath, cb) {
-  var method = arguments.length === 2 ? 'async' : 'sync';
+  var method = cb ? 'async' : 'sync';
+  if (typeof filepath !== 'string') {
+    if (cb) return cb(null, false);
+    return false
+  }
   return methods[method].apply(this, arguments);
 };
