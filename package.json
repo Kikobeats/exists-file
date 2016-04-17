@@ -26,11 +26,14 @@
     "should": "*"
   },
   "engines": {
-    "node": ">= 0.10.0",
-    "npm": ">= 1.4.0"
+    "node": ">= 0.10"
   },
   "scripts": {
-    "test": "sh test/test.sh"
+    "pretest": "standard",
+    "test": "mocha"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "standard": "~6.0.8"
+  }
 }
