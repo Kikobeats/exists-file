@@ -1,3 +1,10 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2016-05-03)
+
+* Fix docs ([7167086](https://github.com/kikobeats/exists-file/commit/7167086))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2016-04-17)
 
