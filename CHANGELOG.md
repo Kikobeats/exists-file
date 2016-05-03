@@ -1,3 +1,10 @@
+<a name="2.0.0"></a>
+# 2.0.0 (2016-05-03)
+
+* Breaking changes: Refactor API ([f37c2a1](https://github.com/kikobeats/exists-file/commit/f37c2a1))
+
+
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2016-05-03)
 
