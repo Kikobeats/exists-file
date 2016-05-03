@@ -23,14 +23,11 @@ npm install exists-file --save
 var existsFile = require('exists-file');
 
 // Sync version
+var exists = existsFile('./README.md')
+console.log(exists) // => true
 
-var exists = existsFile('./README.md');
-console.log(exists) // => true;
-
-// Async version
-
-existsFileFile('./README.md', function(err, exists) {
-	...
+// Async version just providing callback
+existsFile('./README.md', function(err, exists) {
 });
 ```
 
