@@ -5,7 +5,7 @@
 [![Dependency status](http://img.shields.io/david/Kikobeats/exists-file.svg?style=flat-square)](https://david-dm.org/Kikobeats/exists-file)
 [![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/exists-file.svg?style=flat-square)](https://david-dm.org/Kikobeats/exists-file#info=devDependencies)
 [![NPM Status](http://img.shields.io/npm/dm/exists-file.svg?style=flat-square)](https://www.npmjs.org/package/exists-file)
-[![Gratipay](https://img.shields.io/gratipay/Kikobeats.svg?style=flat-square)](https://gratipay.com/~Kikobeats/)
+[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/kikobeats)
 
 > Check if a file exists. A fs.exists implementation that is not deprecated.
 
@@ -20,18 +20,16 @@ npm install exists-file --save
 ## Usage
 
 ```js
-var existsFile = require('exists-file');
+var existsFile = require('exists-file')
 
-// Sync version
-var exists = existsFile('./README.md')
+// async
+existsFile('./README.md', console.log) // => null, true
+
+// sync
+var exists = existsFile.sync('./README.md')
 console.log(exists) // => true
-
-// Async version just providing callback
-existsFile('./README.md', function(err, exists) {
-});
 ```
 
 ## License
 
-MIT © [Kiko Beats](http://www.kikobeats.com)
-
+MIT © [Kiko Beats](https://www.kikobeats.com)

@@ -5,22 +5,22 @@ describe 'exists file ::', ->
 
   context 'sync ::', ->
     it 'when file exists', ->
-      existFile('./README.md').should.be.equal true
+      existFile.sync('./README.md').should.be.equal true
 
     it 'file doesnt exist', ->
-      existFile('./lol').should.be.equal false
+      existFile.sync('./lol').should.be.equal false
 
     it 'when filename is false', ->
-      existFile(false).should.be.equal false
+      existFile.sync(false).should.be.equal false
 
     it 'when filename is true', ->
-      existFile(true).should.be.equal false
+      existFile.sync(true).should.be.equal false
 
     it 'when filename is object', ->
-      existFile({}).should.be.equal false
+      existFile.sync({}).should.be.equal false
 
     it 'when filename is number', ->
-      existFile(12).should.be.equal false
+      existFile.sync(12).should.be.equal false
 
   context 'async ::', ->
     it 'when file exists', (done) ->
