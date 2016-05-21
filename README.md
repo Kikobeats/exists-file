@@ -11,6 +11,10 @@
 
 Because [fs.exist](https://nodejs.org/api/fs.html#fs_fs_exists_path_callback) and [fs.existsSync](https://nodejs.org/api/fs.html#fs_fs_existssync_path) are deprecated this an implementation using [fs.stats](https://nodejs.org/api/fs.html#fs_fs_stat_path_callback) and [fs.statsSync](https://nodejs.org/api/fs.html#fs_fs_statsync_path) for get the same result.
 
+Also **always** keep in mind:
+
+> fs.exists() should not be used to check if a file exists before calling fs.open(). Doing so introduces a race condition since other processes may change the file's state between the two calls. Instead, user code should call fs.open() directly and handle the error raised if the file is non-existent.
+
 ## Install
 
 ```bash
