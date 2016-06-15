@@ -17,11 +17,12 @@
     "url": "https://github.com/Kikobeats/exists-file/issues"
   },
   "keywords": [
-    "check",
-    "exist",
+    "directory",
     "exists",
     "file",
-    "fs"
+    "file system",
+    "fs",
+    "recursive"
   ],
   "dependencies": {
     "graceful-fs": "~4.1.4"
