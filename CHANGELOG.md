@@ -1,3 +1,10 @@
+<a name="2.0.2"></a>
+## 2.0.2 (2016-06-15)
+
+* Fix typo ([39b4c01](https://github.com/kikobeats/exists-file/commit/39b4c01))
+
+
+
 <a name="2.0.1"></a>
 ## 2.0.1 (2016-06-15)
 
