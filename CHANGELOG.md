@@ -1,3 +1,13 @@
+<a name="2.0.1"></a>
+## 2.0.1 (2016-06-15)
+
+* Add coverage badge ([eb87d85](https://github.com/kikobeats/exists-file/commit/eb87d85))
+* moar keywords ([a9f4e76](https://github.com/kikobeats/exists-file/commit/a9f4e76))
+* Scaffolding refactor ([589d472](https://github.com/kikobeats/exists-file/commit/589d472))
+* Update README.md ([769dbe0](https://github.com/kikobeats/exists-file/commit/769dbe0))
+
+
+
 <a name="2.0.0"></a>
 # 2.0.0 (2016-05-03)
 
