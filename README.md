@@ -2,6 +2,7 @@
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/exists-file.svg?style=flat-square)
 [![Build Status](http://img.shields.io/travis/Kikobeats/exists-file/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/exists-file)
+[![Coverage Status](https://img.shields.io/coveralls/Kikobeats/exists-file.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/exists-file)
 [![Dependency status](http://img.shields.io/david/Kikobeats/exists-file.svg?style=flat-square)](https://david-dm.org/Kikobeats/exists-file)
 [![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/exists-file.svg?style=flat-square)](https://david-dm.org/Kikobeats/exists-file#info=devDependencies)
 [![NPM Status](http://img.shields.io/npm/dm/exists-file.svg?style=flat-square)](https://www.npmjs.org/package/exists-file)
