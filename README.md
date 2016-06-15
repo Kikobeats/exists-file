@@ -34,6 +34,16 @@ var exists = existsFile.sync('./README.md')
 console.log(exists) // => true
 ```
 
+## API
+
+### existsFile(file, cb)
+### existsFile.sync(file)
+
+#### file
+
+*Required*
+Type: `string`
+
 ## License
 
 MIT © [Kiko Beats](https://www.kikobeats.com)

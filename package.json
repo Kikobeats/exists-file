@@ -23,18 +23,28 @@
     "file",
     "fs"
   ],
+  "dependencies": {
+    "graceful-fs": "~4.1.4"
+  },
   "devDependencies": {
-    "coffee-script": "latest",
+    "coveralls": "latest",
     "mocha": "latest",
+    "nyc": "latest",
     "should": "latest",
     "standard": "latest"
   },
   "engines": {
     "node": ">= 0.10"
   },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "pretest": "standard",
-    "test": "mocha"
+    "clean": "rm -rf node_modules",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "standard lib index.js",
+    "pretest": "npm run lint",
+    "test": "nyc mocha"
   },
   "license": "MIT"
 }
