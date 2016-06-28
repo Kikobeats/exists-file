@@ -1,3 +1,10 @@
+<a name="2.1.0"></a>
+# 2.1.0 (2016-06-28)
+
+* Removed unnecessary dep ([f6e6d63](https://github.com/kikobeats/exists-file/commit/f6e6d63))
+
+
+
 <a name="2.0.2"></a>
 ## 2.0.2 (2016-06-15)
 

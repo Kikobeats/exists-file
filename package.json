@@ -2,7 +2,7 @@
   "name": "exists-file",
   "description": "Check if a file exists. A fs.exists implementation that is not deprecated.",
   "homepage": "https://github.com/Kikobeats/exists-file",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "main": "./index.js",
   "author": {
     "name": "Kiko Beats",
