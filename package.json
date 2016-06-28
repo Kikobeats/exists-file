@@ -21,12 +21,10 @@
     "exists",
     "file",
     "file system",
+    "filesystem",
     "fs",
     "recursive"
   ],
-  "dependencies": {
-    "graceful-fs": "~4.1.4"
-  },
   "devDependencies": {
     "coveralls": "latest",
     "mocha": "latest",

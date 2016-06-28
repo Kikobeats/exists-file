@@ -1,11 +1,6 @@
 'use strict'
 
-var fs = require('graceful-fs')
-var path = require('path')
-
-function getAbsolutePath (filepath) {
-  return path.resolve(process.cwd(), filepath)
-}
+var fs = require('fs')
 
 function isString (str) {
   return typeof str === 'string'
@@ -17,7 +12,7 @@ function existeFile (filepath, cb) {
   cb = cb || noop
   if (!isString(filepath)) return cb(null, false)
 
-  fs.stat(getAbsolutePath(filepath), function (err, stats) {
+  fs.stat(filepath, function (err, stats) {
     if (!err) return cb(null, true)
     if (err.code === 'ENOENT') return cb(null, false)
     return cb(err, stats)
@@ -27,7 +22,7 @@ function existeFile (filepath, cb) {
 existeFile.sync = function existeFileSync (filepath) {
   if (!isString(filepath)) return false
   try {
-    fs.statSync(getAbsolutePath(filepath))
+    fs.statSync(filepath)
     return true
   } catch (err) {
     if (err.code === 'ENOENT') return false
