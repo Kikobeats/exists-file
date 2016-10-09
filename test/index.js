@@ -11,17 +11,37 @@ describe('exists file ::', function () {
     it('file doesnt exist', function () {
       return existFile.sync('./lol').should.be.equal(false)
     })
-    it('when filename is false', function () {
-      return existFile.sync(false).should.be.equal(false)
+    it('should throw an error when filename is false', function () {
+      try {
+        existFile.sync(false)
+        should.fail('no error was thrown')
+      } catch (err) {
+        err.message.should.be.equal('path must be a string')
+      }
     })
-    it('when filename is true', function () {
-      return existFile.sync(true).should.be.equal(false)
+    it('should throw an error when filename is true', function () {
+      try {
+        existFile.sync(true)
+        should.fail('no error was thrown')
+      } catch (err) {
+        err.message.should.be.equal('path must be a string')
+      }
     })
-    it('when filename is object', function () {
-      return existFile.sync({}).should.be.equal(false)
+    it('should throw an error when filename is object', function () {
+      try {
+        existFile.sync({})
+        should.fail('no error was thrown')
+      } catch (err) {
+        err.message.should.be.equal('path must be a string')
+      }
     })
-    return it('when filename is number', function () {
-      return existFile.sync(12).should.be.equal(false)
+    return it('should throw an error when filename is number', function () {
+      try {
+        existFile.sync(12)
+        should.fail('no error was thrown')
+      } catch (err) {
+        err.message.should.be.equal('path must be a string')
+      }
     })
   })
   return context('async ::', function () {
@@ -37,29 +57,37 @@ describe('exists file ::', function () {
         return done()
       })
     })
-    it('when filename is false', function (done) {
-      return existFile(false, function (err, exists) {
-        exists.should.be.equal(false)
-        return done()
-      })
+    it('should throw an error when filename is false', function () {
+      try {
+        existFile(false)
+        should.fail('no error was thrown')
+      } catch (err) {
+        err.message.should.be.equal('path must be a string')
+      }
     })
-    it('when filename is true', function (done) {
-      return existFile(true, function (err, exists) {
-        exists.should.be.equal(false)
-        return done()
-      })
+    it('should throw an error when filename is true', function () {
+      try {
+        existFile(true)
+        should.fail('no error was thrown')
+      } catch (err) {
+        err.message.should.be.equal('path must be a string')
+      }
     })
-    it('when filename is object', function (done) {
-      return existFile({}, function (err, exists) {
-        exists.should.be.equal(false)
-        return done()
-      })
+    it('should throw an error when filename is object', function () {
+      try {
+        existFile({})
+        should.fail('no error was thrown')
+      } catch (err) {
+        err.message.should.be.equal('path must be a string')
+      }
     })
-    it('when filename is number', function (done) {
-      return existFile(19, function (err, exists) {
-        exists.should.be.equal(false)
-        return done()
-      })
+    return it('should throw an error when filename is number', function () {
+      try {
+        existFile(12)
+        should.fail('no error was thrown')
+      } catch (err) {
+        err.message.should.be.equal('path must be a string')
+      }
     })
     return it('returns a promise when no callback passed', function (done) {
       existFile('./README.md')

@@ -8,8 +8,8 @@ function isString (str) {
 }
 
 function existeFile (filepath, cb) {
+  if (!isString(filepath)) throw new TypeError('path must be a string')
   if (!cb) return promise(existeFile, filepath)
-  if (!isString(filepath)) return cb(null, false)
 
   fs.stat(filepath, function (err, stats) {
     if (!err) return cb(null, true)
@@ -19,7 +19,7 @@ function existeFile (filepath, cb) {
 }
 
 existeFile.sync = function existeFileSync (filepath) {
-  if (!isString(filepath)) return false
+  if (!isString(filepath)) throw new TypeError('path must be a string')
   try {
     fs.statSync(filepath)
     return true
