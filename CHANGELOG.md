@@ -1,3 +1,17 @@
+<a name="3.0.0"></a>
+# 3.0.0 (2016-10-09)
+
+* Complete docs ([f34d078](https://github.com/kikobeats/exists-file/commit/f34d078))
+* Update README.md ([55ebf9c](https://github.com/kikobeats/exists-file/commit/55ebf9c))
+* fix: functions throw error when the path argument is not string ([19f32db](https://github.com/kikobeats/exists-file/commit/19f32db))
+* feat: return a promise when no callback passed ([4de5802](https://github.com/kikobeats/exists-file/commit/4de5802))
+
+
+### BREAKING CHANGE
+
+* it was not throwing error before
+
+
 <a name="2.1.0"></a>
 # 2.1.0 (2016-06-28)
 

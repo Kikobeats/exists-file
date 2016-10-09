@@ -2,11 +2,11 @@
   "name": "exists-file",
   "description": "Check if a file exists. A fs.exists implementation that is not deprecated.",
   "homepage": "https://github.com/Kikobeats/exists-file",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "main": "./index.js",
   "author": {
-    "name": "Kiko Beats",
     "email": "josefrancisco.verdu@gmail.com",
+    "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
   },
   "repository": {
@@ -25,6 +25,9 @@
     "fs",
     "recursive"
   ],
+  "dependencies": {
+    "cb2promise": "^1.0.2"
+  },
   "devDependencies": {
     "coveralls": "latest",
     "mocha": "latest",
@@ -45,8 +48,5 @@
     "pretest": "npm run lint",
     "test": "nyc mocha"
   },
-  "license": "MIT",
-  "dependencies": {
-    "cb2promise": "^1.0.2"
-  }
+  "license": "MIT"
 }
