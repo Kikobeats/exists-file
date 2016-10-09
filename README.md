@@ -40,12 +40,14 @@ console.log(exists) // => true
 
 ## API
 
-### existsFile(file, [cb])
+### existsFile(filepath, [cb])
 
-#### file
+#### filepath
 
 *Required* <br>
 Type: `string`
+
+The relative or absolute file path.
 
 #### cb
 
@@ -53,12 +55,14 @@ Type: `function`
 
 If `cb` is not provided then it returns a `promise`.
 
-### existsFile.sync(file)
+### existsFile.sync(filepath)
 
-#### file
+#### filepath
 
 *Required* <br>
 Type: `string`
+
+The relative or absolute file path.
 
 ## License
 
