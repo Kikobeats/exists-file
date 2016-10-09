@@ -40,12 +40,24 @@ console.log(exists) // => true
 
 ## API
 
-### existsFile(file, cb)
+### existsFile(file, [cb])
+
+#### file
+
+*Required* <br>
+Type: `string`
+
+#### cb
+
+Type: `function`
+
+If `cb` is not provided then it returns a `promise`.
+
 ### existsFile.sync(file)
 
 #### file
 
-*Required*
+*Required* <br>
 Type: `string`
 
 ## License
