@@ -1,15 +1,14 @@
 'use strict'
 
 var fs = require('fs')
+var promise = require('cb2promise')
 
 function isString (str) {
   return typeof str === 'string'
 }
 
-function noop () {}
-
 function existeFile (filepath, cb) {
-  cb = cb || noop
+  if (!cb) return promise(existeFile, filepath)
   if (!isString(filepath)) return cb(null, false)
 
   fs.stat(filepath, function (err, stats) {

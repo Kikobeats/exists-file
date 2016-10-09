@@ -45,5 +45,8 @@
     "pretest": "npm run lint",
     "test": "nyc mocha"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cb2promise": "^1.0.2"
+  }
 }

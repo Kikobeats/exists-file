@@ -55,11 +55,19 @@ describe('exists file ::', function () {
         return done()
       })
     })
-    return it('when filename is number', function (done) {
+    it('when filename is number', function (done) {
       return existFile(19, function (err, exists) {
         exists.should.be.equal(false)
         return done()
       })
+    })
+    return it('returns a promise when no callback passed', function (done) {
+      existFile('./README.md')
+        .then((exists) => {
+          exists.should.be.equal(true)
+          done()
+        })
+        .catch(done)
     })
   })
 })
