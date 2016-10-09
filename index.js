@@ -1,16 +1,15 @@
 'use strict'
 
 var fs = require('fs')
+var promise = require('cb2promise')
 
 function isString (str) {
   return typeof str === 'string'
 }
 
-function noop () {}
-
 function existeFile (filepath, cb) {
-  cb = cb || noop
-  if (!isString(filepath)) return cb(null, false)
+  if (!isString(filepath)) throw new TypeError('path must be a string')
+  if (!cb) return promise(existeFile, filepath)
 
   fs.stat(filepath, function (err, stats) {
     if (!err) return cb(null, true)
@@ -20,7 +19,7 @@ function existeFile (filepath, cb) {
 }
 
 existeFile.sync = function existeFileSync (filepath) {
-  if (!isString(filepath)) return false
+  if (!isString(filepath)) throw new TypeError('path must be a string')
   try {
     fs.statSync(filepath)
     return true
