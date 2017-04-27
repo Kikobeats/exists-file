@@ -18,15 +18,6 @@ function existeFile (filepath, cb) {
   })
 }
 
-existeFile.sync = function existeFileSync (filepath) {
-  if (!isString(filepath)) throw new TypeError('path must be a string')
-  try {
-    fs.statSync(filepath)
-    return true
-  } catch (err) {
-    if (err.code === 'ENOENT') return false
-    throw err
-  }
-}
+existeFile.sync = fs.existsSync
 
 module.exports = existeFile
