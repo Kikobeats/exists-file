@@ -1,3 +1,21 @@
+<a name="3.0.1"></a>
+## 3.0.1 (2017-04-27)
+
+* Refactor ([2b99144](https://github.com/kikobeats/exists-file/commit/2b99144))
+* Refactor tests ([00a9aa9](https://github.com/kikobeats/exists-file/commit/00a9aa9))
+* TIL deps ([7121344](https://github.com/kikobeats/exists-file/commit/7121344))
+* Update deps ([b5a7422](https://github.com/kikobeats/exists-file/commit/b5a7422))
+* Update travis builds ([411b2a2](https://github.com/kikobeats/exists-file/commit/411b2a2))
+* Use fs.access ([9048acd](https://github.com/kikobeats/exists-file/commit/9048acd))
+* Use fs.existsSync, is not deprecated ([b23684b](https://github.com/kikobeats/exists-file/commit/b23684b))
+* chore: drop support for Node.js 0.10 ([f8d3991](https://github.com/kikobeats/exists-file/commit/f8d3991))
+
+
+### BREAKING CHANGE
+
+* This module no longer supports Node.js 0.10
+
+
 <a name="3.0.0"></a>
 # 3.0.0 (2016-10-09)
 
