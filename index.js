@@ -1,11 +1,8 @@
 'use strict'
 
-var fs = require('fs')
-var promise = require('cb2promise')
-
-function isString (str) {
-  return typeof str === 'string'
-}
+const fs = require('fs')
+const promise = require('cb2promise')
+const isString = (str) => typeof str === 'string'
 
 function existeFile (filepath, cb) {
   if (!isString(filepath)) {
