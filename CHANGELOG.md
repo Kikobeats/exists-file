@@ -1,3 +1,12 @@
+<a name="3.0.2"></a>
+## 3.0.2 (2017-07-18)
+
+* Update README.md ([d7e1869](https://github.com/kikobeats/exists-file/commit/d7e1869))
+* docs(readme): add Greenkeeper badge ([6576293](https://github.com/kikobeats/exists-file/commit/6576293))
+* chore(package): update dependencies ([83b6b32](https://github.com/kikobeats/exists-file/commit/83b6b32))
+
+
+
 <a name="3.0.1"></a>
 ## 3.0.1 (2017-04-27)
 
