@@ -1,5 +1,7 @@
 # exists-file
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/exists-file.svg)](https://greenkeeper.io/)
+
 ![Last version](https://img.shields.io/github/tag/Kikobeats/exists-file.svg?style=flat-square)
 [![Build Status](http://img.shields.io/travis/Kikobeats/exists-file/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/exists-file)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/exists-file.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/exists-file)
